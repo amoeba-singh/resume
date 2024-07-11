@@ -4,11 +4,14 @@
 }
 body{
     color: white;
-    background-color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(background7.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
 }
 nav{
-    width: 100%;
+    margin-left: 5%;
     height: 20vh;
     display: flex;
     justify-content: space-between;
@@ -22,13 +25,14 @@ nav{
     align-items: center;
 }
 .searchbar{
+    font-size: x-large;
     display: flex;
-    border-radius: 30px;
-    padding: 10px 20px;
-    background-color: rgb(88, 96, 96);
-    width: 60%;
     justify-content: space-around;
     align-items: center;
+    border-radius: 30px;
+    padding: 9px 15px;
+    background-color: rgb(88, 96, 96);
+    width: 60%;
 }
 .searchbar input{
     background-color: rgb(88, 96, 96);
@@ -42,42 +46,60 @@ input[type="text"]::-webkit-input-placeholder{
     font-weight: 300;
 }
 .nav-cont{
-    margin-right: 2rem;
+    margin-right: 4%;
     width: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .lower-nav{
-    margin-left: 70px;
+    margin-left: 10%;
 }
-.button1, .button2, .button3, .button4, .button5, .button6{
+.button{
     padding: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: black;
+    animation: border-button 12s ease 0s infinite;
     color: white;
     border-radius: 20px;
 }
-.button1, .button4{
-    border: 2px solid blue;
-}
-.button2, .button6{
-    border: 2px solid red;
-}
-.button3{
-    border: 2px solid yellow;
-}
-.button5{
-    border: 2px solid green;
+@keyframes border-button {
+    0%{border: 2px solid blue;}
+    25%{border: 2px solid red;}
+    50%{border: 2px solid yellow;}
+    75%{border: 2px solid green;}
+    100%{border: 2px solid blue;}
 }
 
 .main-content{
-    margin: 2em 0 0 4.5em;
-    line-height: 2;
+    margin: 2em 10% 0 10%;
+    width: 80%
 }
 .main-content ul{
-    margin-left: 1.5em;
+    margin-left: 2em;
 }
-.main-content p{
-    font-size: 1.2em;
+.main-content{
+    line-height: 1.5rem;
 }
+h1{
+    color: #99c3ff;
+    font-size: x-large;
+}
+li{
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+/* .education_main{
+    line-height: 1.5rem;
+}
+.education_main h1{
+    color: #99c3ff;
+    font-size: x-large;
+}
+.education_main li{
+    font-size: 1rem;
+} */
