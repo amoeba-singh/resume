@@ -4,11 +4,14 @@
 }
 body{
     color: white;
-    background-color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(background7.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
 }
 nav{
-    width: 100%;
+    margin-left: 5%;
     height: 20vh;
     display: flex;
     justify-content: space-between;
@@ -22,13 +25,14 @@ nav{
     align-items: center;
 }
 .searchbar{
+    font-size: x-large;
     display: flex;
-    border-radius: 30px;
-    padding: 10px 20px;
-    background-color: rgb(88, 96, 96);
-    width: 60%;
     justify-content: space-around;
     align-items: center;
+    border-radius: 30px;
+    padding: 9px 15px;
+    background-color: rgb(88, 96, 96);
+    width: 60%;
 }
 .searchbar input{
     background-color: rgb(88, 96, 96);
@@ -42,18 +46,20 @@ input[type="text"]::-webkit-input-placeholder{
     font-weight: 300;
 }
 .nav-cont{
-    margin-right: 2rem;
+    margin-right: 4%;
     width: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+
 .lower-nav{
-    margin-left: 70px;
+    margin-left: 10%;
 }
 .button{
     padding: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: black;
     animation: border-button 12s ease 0s infinite;
     color: white;
@@ -68,19 +74,23 @@ input[type="text"]::-webkit-input-placeholder{
 }
 
 .main-content{
-    margin: 2em 0 0 4.5em;
+    margin: 2em 10% 0 10%;
+    width: 80%;
     display: flex;
 }
 .left-side{
-    width: 50%;
+    /* width: 50%; */
+    margin-left: 0;
 }
 .left-side a{
+    font-weight: 500;
     text-decoration: none;
     font-size: 1.8vw;
-    color: rgb(29, 110, 224);
+    color: #599eff;
 }
 .left-side ul{
-    margin: 0 0 0 5em;
+    margin: 0 0 0 3em;
+    font-size: medium;
 }
 .left-side p{
     font-weight: 700;
@@ -88,19 +98,7 @@ input[type="text"]::-webkit-input-placeholder{
     color: antiquewhite;
 }
 
-.right-side{
-    width: 40%;
-    text-align: center;
-}
-.right-side img{
-    border: 10px solid green;
-    border-radius: 10%;
-}
-.right-side p{
-    padding: 10px;
-    border: 3px solid yellow;
-    border-radius: 10px;
-    height: 5em;
-    width: 18.5em;
-    margin-left: 5.2em;
+.contact, .extra, .experience, .skills, .education, .certificate{
+    margin: 2% 0 5% 0;
+    line-height: 1.5rem;
 }
